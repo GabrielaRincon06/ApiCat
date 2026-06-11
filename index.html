@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gatos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <main class="container">
+    <h1>Datos Diarios de Gatos</h1>
+    <p>Consulta Datos Diarios de Gatos usando la API theCatApi.</p>
+
+    <section class="card">
+      <label>API Key</label>
+      <input type="password" id="apiKey" placeholder="Ingresa tu API Key" />
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Filtrado por raza</h2>
+
+        <label>Raza</label>
+        <input type="text" id="name" />
+
+
+        <button onclick="FiltradoNombre()">Consultar</button>
+      </div>
+
+      <div class="card">
+        <h2>Como es el tipo de raza de gato</h2>
+
+        <label>temperament</label>
+        <input type="text" id="temperament" />
+
+        <button onclick="Temperamento()">Verificar</button>
+      </div>
+
+      <div class="card">
+        <h2>origen de la Raza</h2>
+
+        <label>Origen</label>
+        <input type="text" id="origin"  />
+
+        <button onclick="Origen()">Consultar</button>
+      </div>
+
+    </section>
+
+
+    <section class="card">
+      <h2>Resultado</h2>
+      <div id="resultado" class="resultado">
+        Aquí aparecerán los resultados.
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
